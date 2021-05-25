@@ -1,12 +1,15 @@
 package com.ihtasham.monesetest.Domain;
 
+import java.math.BigDecimal;
 import lombok.*;
 
-import java.math.BigDecimal;
-
-@Builder @Getter @Setter @NoArgsConstructor @AllArgsConstructor
+@Builder
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class CreateTransactionRequest {
-    private Integer sender;
-    private Integer recipient;
-    private BigDecimal amount;
+  private Integer sender;
+  private Integer recipient;
+  private BigDecimal amount;
 }

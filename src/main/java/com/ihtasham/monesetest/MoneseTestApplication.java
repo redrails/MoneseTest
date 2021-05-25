@@ -6,8 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class MoneseTestApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(MoneseTestApplication.class, args);
-	}
-
+  public static void main(String[] args) {
+    SpringApplication.run(MoneseTestApplication.class, args);
+  }
 }
