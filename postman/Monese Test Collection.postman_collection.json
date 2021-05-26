@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "27add4e6-d04f-4425-a333-438e5b1e6e3e",
+		"name": "Monese Test Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Account -> Create",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"balance\": \"0.01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/account/create",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"account",
+						"create"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Account -> Balance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/account/balance?id=1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"account",
+						"balance"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transaction -> Create",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sender\": \"1\",\r\n    \"recipient\": \"2\",\r\n    \"amount\": 10.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/transaction/create",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"transaction",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

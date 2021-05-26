@@ -44,9 +44,13 @@ HTTP PUT - `/account/create` - Requires a JSON body, e.g:
 }
 ```
 
+---
+
 **Get account balance/transactions:**
 
 HTTP GET - `/account/balance?id={id}` - Where `{id}` is request parameter with a valid Account ID.
+
+---
 
 **Create a transaction:**
 
@@ -62,7 +66,7 @@ HTTP PUT - `/transaction/create` - Requires a JSON body, e.g:
 
 Note: Account must have enough balance to complete the transaction.
 
-A Postman collection and environment is included in the repo which you can simply import and run the endpoints yourself.
+A Postman collection and environment is included in the repo which you can simply import into Postman and run the endpoints yourself.
 
 ### Tests
 
