@@ -3,6 +3,7 @@ package com.ihtasham.monesetest.Domain;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import java.math.BigDecimal;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -40,6 +41,7 @@ public class Account {
                       return t;
                     }),
             recipient_transactions.stream())
+        .sorted(Comparator.comparing(Transaction::getCreatedOn).reversed())
         .collect(Collectors.toList());
   }
 }
