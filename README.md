@@ -34,7 +34,7 @@ You can also use gradle: `gradlew bootRun`
 
 ### Endpoints
 
-Create an account:
+**Create an account:**
 
 HTTP PUT - `/account/create` - Requires a JSON body, e.g:
 
@@ -44,11 +44,11 @@ HTTP PUT - `/account/create` - Requires a JSON body, e.g:
 }
 ```
 
-Get account balance/transactions:
+**Get account balance/transactions:**
 
 HTTP GET - `/account/balance?id={id}` - Where `{id}` is request parameter with a valid Account ID.
 
-Create a transaction:
+**Create a transaction:**
 
 HTTP PUT - `/transaction/create` - Requires a JSON body, e.g:
 
