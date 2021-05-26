@@ -25,6 +25,9 @@ First build the application: `gradlew build`
 
 Then run the jar using Java: `java -jar build/libs/*.jar`
 
+You may skip the above build steps and use a pre-built release package which can be found here: https://github.com/redrails/MoneseTest/releases/tag/1.0
+(please ensure that your database is set up accordingly).
+
 #### Gradle
 
 You can also use gradle: `gradlew bootRun`
