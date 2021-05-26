@@ -63,7 +63,7 @@ A Postman collection and environment is included in the repo which you can simpl
 
 ### Tests
 
-Run unit tests: `gradlew test` 
+Run unit tests: `gradlew test` - The unit test coverage is very close to 100% for relevant methods that require it.
 
 End-to-end testing:
 
